@@ -1,0 +1,72 @@
+/* Default */
+a {
+    color: blue;
+  }
+  /* Unvisited links */
+  a:link {
+    color: blue;
+  }
+  /* Visited links */
+  a:visited {
+    color: purple;
+  }
+  /* Hover state */
+  a:hover {
+    color: red; 
+  }
+  /* Focused state */
+  a:focus {
+    color: orange;
+  }
+  /* Activated state */
+  a:active {
+    color: green;
+  }
+
+  /*-------------combine the links---------------- */
+  a:link {
+    color: blue;
+  }
+  a:visited {
+    color: purple;
+  }
+  a:link:hover {
+    color: green;
+  }
+  a:visited:hover {
+    color: red;
+  }
+
+  /* --------------suggested order-------------------- */
+        /* a { }
+        a:link { }
+        a:visited { }
+        a:hover { }
+        a:focus { }
+        a:active { } */
+
+/* ---------------technic---------------------     */
+
+/* Spaces before and after the colon (:) won't work */
+a : link {
+    color: green;
+  }
+  
+  /* Spaces before the colon (:) won't work */
+  a :link {
+    color: green;
+  }
+  /* Spaces after the colon (:) won't work */
+  a: link {
+    color: green;
+  }
+
+  /* -------------------text transform-------------------- */
+  /* Unvisited links are told to render in all-lowercase */
+a:link {
+    text-transform: lowercase;
+  }
+  /* Visited links are instructed to render in all-caps */
+  a:visited {
+    text-transform: uppercase;
+  }

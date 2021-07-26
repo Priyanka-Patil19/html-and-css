@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form MDN</title>
+    <style>
+        form.form-example {
+            display: table;
+        }
+
+        div.form-example {
+            display: table-row;
+        }
+
+        label,
+        input {
+            display: table-cell;
+            margin-bottom: 10px;
+        }
+
+        label {
+            padding-right: 10px;
+        }
+
+        input+span {
+            position: relative;
+        }
+
+        input+span::before {
+            position: absolute;
+            right: -20px;
+            top: 5px;
+        }
+
+        input:invalid {
+            border: 2px solid red;
+        }
+
+        input:invalid+span::before {
+            content: '✖';
+            color: red;
+        }
+
+        input:valid+span::before {
+            content: '✓';
+            color: green;
+        }
+
+        /* second form */
+        label {
+            display: block;
+            margin: 1px;
+            padding: 1px;
+        }
+
+        .field {
+            margin: 1px;
+            padding: 1px;
+        }
+
+        input:invalid {
+            background-color: #ffdddd;
+        }
+
+        form:invalid {
+            border: 5px solid #ffdddd;
+        }
+
+        input:valid {
+            background-color: #ddffdd;
+        }
+
+        form:valid {
+            border: 5px solid #ddffdd;
+        }
+
+        input:required {
+            border-color: #800000;
+            border-width: 3px;
+        }
+
+        input:required:invalid {
+            border-color: #c00000;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" method="get" class="form-example">
+        <div class="form-example">
+            <label for="name">Enter your name: </label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="email">Enter your email: </label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <label for="fname">First name *: </label>
+            <input id="fname" name="fname" type="text" required>
+            <span></span>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Subscribe!">
+        </div>
+    </form>
+    <h1>Second form</h1>
+    <form>
+        <div class="field">
+            <label for="url_input">Enter a URL:</label>
+            <input type="url" id="url_input">
+        </div>
+
+        <div class="field">
+            <label for="email_input">Enter an email address:</label>
+            <input type="email" id="email_input" required>
+        </div>
+    </form>
+
+    <h1>Third form</h1>
+    <form>
+        <label>Name:
+          <input name="submitted-name" autocomplete="name">
+        </label>
+        <button>Save</button>
+      </form>
+      
+      <!-- Form which will send a POST request to the current URL -->
+      <form method="post">
+        <label>Name:
+          <input name="submitted-name" autocomplete="name">
+        </label>
+        <button>Save</button>
+      </form>
+      
+      <!-- Form with fieldset, legend, and label -->
+      <form method="post">
+        <fieldset>
+          <legend>Title</legend>
+          <label><input type="radio" name="radio"> Select me</label>
+        </fieldset>
+      </form>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* border-collapse: separate;
+    border-spacing: 4px; */
+}
+
+th,td{
+    /* border-bottom: 1px solid black; */
+    padding: 10px 15px;
+}
+
+thead{
+    background-color: #395870 ;
+    color: #fff;
+}
+ 
+tbody tr:nth-child(even){
+    background: #f0f0f2;
+}
+td{
+    border-bottom: 1px solid #cecfd5;
+    border-right: 1px solid #cecfd5;
+}
+
+td:first-child{
+    border-left: 1px solid #cecfd5;
+}
+/* tfoot tr:last-child td{
+    border-bottom: 0;
+} */
+
+.book-title{
+    color: #395870;
+    display: block;
+}
+
+.item-stock ,
+.item-qty{
+    text-align: center;
+}
+
+.item-price{
+    text-align: right;
+}
+ .item-multiple{
+     display: block;
+ }
+
+ tfoot{
+     text-align: right;
+ }
+
+ tfoot tr:last-child{
+    background: #f0f0f2;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
