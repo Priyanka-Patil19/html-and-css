@@ -1,0 +1,37 @@
+/* img{
+    float: right;
+    margin-top: 25px;
+}
+.block {
+	width: 200px;
+	height: 200px;
+}
+.float { float: left; }
+/* .clear { clear: left; } 
+.pink { background: #ee3e64; }
+.blue { background: #44accf; }
+.green { background: #b7d84b; }
+.orange { background: #E2A741; } */
+
+/* #container {
+
+    overflow: hidden;
+	width: 260px;
+	margin: 0 auto;
+	padding: 10px 10px 10px 10px;
+	background: #aaa;
+	border: 1px solid #999;
+} */
+
+#container:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+img {
+	float: right;
+	margin: 0 5px 0 0;
+}
