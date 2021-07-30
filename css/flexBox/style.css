@@ -1,0 +1,81 @@
+#container{
+    display: flex;
+    border:3px solid black;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.subdiv{
+    flex:1;
+    width: calc(33.333%-10px);
+    height: auto;
+    border: 3px solid red;
+}
+#box_1{
+    background-color: rosybrown;
+}
+#box_2{
+    background-color: rgb(125, 76, 182);
+}
+#box_3{
+    background-color: rgb(108, 168, 116);
+}
+#box_4{
+    background-color: rgb(223, 88, 166);
+}
+#box_5{
+    /* align-self: auto | flex-start | flex-end | center | baseline | stretch; */
+    flex-shrink: 3; /* default 1 */
+    flex-grow: 4; /* default 0 */
+    order: 5; /* default is 0 */
+    background-color: rgb(191, 224, 113);
+}
+.container {
+    background-color: rosybrown;
+    
+    /* justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right ... + safe | unsafe; */
+    /* align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe; */
+    /* align-content: flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline | first baseline | last baseline + ... safe | unsafe;
+ */
+}
+
+.item {
+    background-color: silver;
+    /* flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
+  }
+
+  
+/* 
+  @mixin flexbox() {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  @mixin flex($values) {
+    -webkit-box-flex: $values;
+    -moz-box-flex:  $values;
+    -webkit-flex:  $values;
+    -ms-flex:  $values;
+    flex:  $values;
+  }
+  
+  @mixin order($val) {
+    -webkit-box-ordinal-group: $val;  
+    -moz-box-ordinal-group: $val;     
+    -ms-flex-order: $val;     
+    -webkit-order: $val;  
+    order: $val;
+  }
+  
+  .wrapper {
+    @include flexbox();
+  }
+  
+  .item {
+    @include flex(1 200px);
+    @include order(2);
+  } */
